@@ -17,7 +17,7 @@ This lab demonstrates key cybersecurity concepts and networking fundamentals. An
 
 ## Network Architecture
 
-![Network Architecture](Attachments/image.png)
+![Network Architecture](Attachments/network-architecture.png)
 
 ## Setup and Network Configuration
 
