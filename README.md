@@ -76,7 +76,7 @@ Expected output:
 ## Next Steps
 The next steps for this homelab is to use network reconnaissance tools that true red teamers use. These include Nmap to discover open ports leading to vulnerabilities, Wireshark packet capturing to analyse the traffic between the two VMs, and ARP scanning to discover devices in a LAN. It is crucial to practice these skills towards better familiarity and proficiency in using pen testing tools and softwares.
 
-## Proficiencies Developed:
+## Developed Proficiencies
 - Applied network segmentation principles and configured an isolated internal network in VirtualBox
 - Configured manual IP addresses
 - Conducted a cross-platform connectivity check using the ping command (ICMP) between Windows 11 and Kali Linux
