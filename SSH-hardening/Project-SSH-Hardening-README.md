@@ -15,12 +15,11 @@ As such, in order to reinforce the Ubuntu VM these actions could be taken:
 ## Software/Tools Used
 Kali Linux:
 - hydra
-- nmap
 
 Ubuntu Server:
 - fail2ban
 
-## Create Sudo User
+## Sudo User Creation
 ```bash
 sudo adduser labadmin # creates a user called labadmin
 sudo usermod -aG sudo labadmin # adds labadmin to sudo group
@@ -67,7 +66,7 @@ According to fail2ban logs, the Kali VM's ip was banned.
 
 Hence when we try hydra once more, connection was refused.
 
-## Generate key-pair authentication key
+## Key-pair authentication key generation
 In the Kali Linux VM:
 ```zsh
 ssh-keygen -t ed25519 # Generates key
@@ -75,7 +74,7 @@ ssh-copy-id labadmin@192.168.1.17 # Sends key to labadmin
 ssh labadmin@192.168.1.17 # Login to labadmin to test if key pairing worked
 ```
 
-## Disable password auth and root user login
+## Password auth and root user login deactivation
 ```bash
 sudo nano /etc/ssh/sshd_config
 ```
