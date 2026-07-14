@@ -1,4 +1,4 @@
-# Project 2: Firewall Lab (iptables + nmap Before/After)
+# Lab 2: Attack surface Reduction (Firewall config using iptables + nmap Before/After)
 This lab project delves deeper into firewall configuration with the use of **iptables**, the firewall configuration software for Linux. This project aims to secure the network traffic that comes in and out of the Ubuntu Server VM. Kali Linux, will be used to simulate a port scan using the network mapping tool (nmap). This project serves as a great way to develop proficiency in the port scanning technique as well as fundamental firewall configuration skills. It is important to note that iptables is a legacy tool, and that nftables has now replaced the entire iptables ecosystem. 
 
 ## Purpose
@@ -82,7 +82,7 @@ sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 # -j : used to set target
 ```
 ### Default Deny
-The default deny concept was tackled in the SSH hardening project briefly. Essentially, concept of a default deny is to deny or block all traffic by default unless explicitly stated or configured to allow it to pass through. This ensures that there are no rogue or forgotten open ports that could be a vulnerability to the server or system. The most common configuration for a default deny is a: INPUT - DROP, FORWARD - DROP, OUTPUT - ACCEPT. 
+The default deny concept was tackled in the SSH hardening project briefly. Essentially, the concept of a default deny is to deny or block all traffic by default unless explicitly stated or configured to allow it to pass through. This ensures that there are no rogue or forgotten open ports that could be a vulnerability to the server or system. The most common configuration for a default deny is a: INPUT - DROP, FORWARD - DROP, OUTPUT - ACCEPT. 
 ```bash
 sudo iptables -P INPUT DROP 
 sudo iptables -P FORWARD DROP
@@ -107,6 +107,7 @@ sudo netfilter-persistent save
 sudo nmap -sS -p- -Pn 192.168.1.17 -oN after-scan.txt
 ```
 Result:
+
 ![alt text](Attachments/nmap-scan-after.png)
 
 After configuring the firewall with a default deny policy in mind, after an nmap scan of all ports of the ubuntu server, port 22 is the only port confirmed to be open while the other ports are not shown or filtered which is the result of the default drop for the INPUT chain. This is a key difference since the previous nmap scan ascertained that all other ports were closed which could be the difference between the threat actor breaching the system through other ports or not. 

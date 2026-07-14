@@ -1,4 +1,4 @@
-# SSH Hardening with key-based authentication
+# Lab 1: SSH Hardening with key-based authentication
 
 The purpose of this lab project is to reinforce the Ubuntu Server VM by enabling key-pair authentication. Key-pair authentication is a login method that does not require a password and instead, relies on a mathematical function to ensure user confidentiality and integrity. This authentication method protects the server from brute-force login attacks. In this project, Kali Linux will be used to conduct a brute force attack before and after SSH hardening to showcase the difference in security. 
 
@@ -90,7 +90,8 @@ Result:
 
 ![alt text](attachments/loginAttempt.png)
 
-## Firewall Configuration
+## Basic Firewall Configuration
+ufw is a simple CLI that allows you to configure the firewall rules. Here, we shall change the firewall policy to a default deny, which denies all traffic incoming unless explicitly allowed. The set of commands below closes all ports, and allows SSH port or port 22 open. This concept will be further tackled in lab 2.
 ```bash
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
