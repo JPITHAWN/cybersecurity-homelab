@@ -1,5 +1,5 @@
 # Packet Capture & Traffic Analysis (using netstat/ss, tcpdump, and wireshark)
-
+**TEMPLATE ONLY**
 *(1–2 sentence intro, in your own words — what this lab does and why it
 moves one layer below the log-based work in Projects 1–3. See the Purpose
 section of Project 4's briefing for the framing if you want a reminder.)*
