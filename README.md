@@ -15,7 +15,21 @@ This lab demonstrates key cybersecurity concepts and networking fundamentals. An
 | VM 3             | Ubuntu Server                     |
 | Network mode     | Internal Network (`homelabnet`)   |
 | Addressing       | Static IPv4, 192.168.1.0/24 subnet|
+Technical & project questions
 
+Tell me about a project you've worked on. Walk me through the technical details, your specific role, and the outcome. (This is explicitly flagged — expect them to drill deep, so pick a project you can defend end-to-end.)
+Tell me about a technology you're familiar with. What do you know about it, and how have you used it? (Be ready to go in-depth — they're testing whether you actually understand it rather than name-dropping.)
+Tell me about a time you had to troubleshoot a difficult technical problem. How did you diagnose it and what was your process? (Verkada's product is networked hardware — cameras, access control, sensors — so networking fundamentals like IP addressing, DNS, DHCP, PoE, VLANs, and firewalls are very likely to surface here.)
+What technology or area are you most excited to learn about? (Directly tied to their "interest in technology" evaluation criterion — shows curiosity and growth mindset.)
+How would you explain a complex technical concept to a non-technical customer? (Core to a support engineering role — tests communication and empathy.)
+
+Behavioral questions (mapped to their stated values)
+
+Ownership: Tell me about a time you took full responsibility for a problem or saw something through when it would have been easier to pass it off.
+Teamwork: Tell me about a time you worked with a team to solve a problem, or had to resolve a disagreement with a teammate.
+Initiative: Tell me about a time you went beyond what was asked of you, or identified and fixed a problem no one told you to.
+Customer-facing / motivation: Tell me about a time you dealt with a frustrated or difficult customer (or stakeholder). How did you handle it? (Ties to the customer-facing experience and attitude focus.)
+Why Verkada, and why technical support specifically? What motivates you about this kind of work? (Third-round manager screens almost always probe genuine motivation and fit.)
 ## Network Architecture
 
 ![Network Architecture](Attachments/network-architecture.png)
